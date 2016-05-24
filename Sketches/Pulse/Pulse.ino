@@ -15,7 +15,7 @@ void loop() {
   } else if (brightness < 1) {
     slope = 1;
   }
-  
+
   analogWrite(LED, brightness);
   delay(2);
 }
