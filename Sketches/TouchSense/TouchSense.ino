@@ -3,7 +3,7 @@
 #define LED 13
 #define SEND_PIN 4
 #define SENSOR_PIN 2
-#define THRESHOLD 1000
+#define THRESHOLD 500
 
 int button_state;
 int last_button_state = LOW;
