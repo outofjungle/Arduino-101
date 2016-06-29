@@ -12,6 +12,6 @@ void loop() {
   sensor_value = analogRead(POT); // Read analog value from analog pin 0
 
   // map values 0->1023 to 0->255 (higher the value, higher the brightness)
-  brightness = map(sensor_value, 0, 1023, 0, 255);
+  brightness = map(sensor_value, 0, 1023, 0, 254);
   analogWrite(LED, brightness);   // PWM LED pin to the brightness value
 }
