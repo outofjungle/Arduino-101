@@ -13,7 +13,7 @@ void loop() {
   sensor_value = analogRead(LDR); // Read analog value from analog pin 2
   Serial.println(sensor_value);   // Print the read value onto the serial bus
 
-  // map values 150->650 to 255->0 (higher the value, lower the brightness)
+  // map values 150->650 to 255->0 (higher the value, higher the brightness)
   brightness = map(sensor_value, 0, 1023, 0, 254);
   analogWrite(LED, brightness);   // PWM LED pin to the brightness value
 }
